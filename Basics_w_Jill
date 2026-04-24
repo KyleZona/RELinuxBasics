@@ -1,0 +1,623 @@
+# this is the structure for jill valentine
+
+server:theumbrellaconspiracy
+user: jillvalentine
+password: stars
+
+raccoon_forest
+		oswell_spencer_mansion
+			mainhall
+				doubledoors
+				browndoor
+				bluedoor
+					hiddenelevator
+						Umbrella
+							Research_Office
+							Cultivation_Room
+							Holding_Cells
+								Cell_1
+								Cell_2
+								Cell_3
+								Cell_4
+								Cell_5
+								Cell_6
+								Cell_7
+								Cell_8
+								Cell_9
+								Cell_10
+							Emergency_Helipad
+			
+						
+##### INSIDER FORMATTING
+dir:
+auto:
+typewriter () {		
+
+##### player guide #####
+# DIFFICULTY: Easy
+# player may cat ./HelpBarry.txt for hints on how to move forward
+
+server:theumbrellaconspiracy
+user: jillvalentine
+password: stars
+
+dir: raccoon_forest
+	auto: .opening.sh
+typewriter() {
+	— 1998 July — Raccoon Forest
+
+	Chris Redfield: Alpha Team is flying around the forest
+	zone, situated in northwest Raccoon City, where we're
+	searching for the helicopter of our compatriots
+	Bravo Team, who disappeared during the middle of their
+	mission.
+
+		Captain Wesker: Anyone seeing anything?
+		Barry Burton: Nothing yet.
+
+	Chris: Bizarre murder cases have recently occurred in
+	Raccoon City. There are outlandish reports of families
+	being attacked by a group of about 10 people. Victims
+	were apparently eaten. Bravo Team went to the hideout
+	of the group, and disappeared. 
+
+		Jill: Look, Chris!
+
+	Chris: It was Bravo Team's helicopter. Nobody was in it.
+	But strangely, most of the equipment was still there.
+	However, we soon discovered why.
+
+	Joseph's scream tore through the clearing.
+	In his hand — a severed hand, still clutching a pistol.
+	Rabid beats jumped from the tall grass, hitting Joseph
+	like a wave. The other four S.T.A.T.S. members spun
+	to see Joseph’s final moments.
+
+	Chris fired, snapping Jill out of pure shock. More rabid
+	. . . dogs? appeared. The team took off running back to the
+	helicopter gaining some distance. 
+	
+		Chris: No! Don't go!
+
+	The helicopter flew off into the dark horizon, leaving
+	the team standing there. The rabid dogs were getting
+	closer...
+
+		Chris: Jill! Run for that house!
+
+	It wasn’t a house, it was a mansion. A perfect place to
+	find safety… Except the doors didn’t open. Hardly budged.
+
+		type command cat ./help_me_barry.txt
+}
+		player command
+			cat ./help_me_barry.txt
+				.txt: use command ls to list out what is inside the directory
+				.txt: then use command cd to change directories.
+				.txt: for example cd ./directory_name
+				.txt: for reference, “.” means current directory
+			ls
+				# ./	oswell_spencer_mansion
+				# ./helpbarry.txt
+			cd ./oswell_spencer_mansion
+				# please enter your last name:
+				# password: spencer
+			# if incorrect: auto: ./.attempt_failed.sh
+Typewriter () {
+	The keypad blinked — still red.
+	Rabid dogs stopped a few feet away.
+	Growling, charging up, Jill looked
+	back to the screen that read:
+		
+		FAILED ATTEMPT.
+		ONLY ONE MORE ALLOWED.
+		. . .
+}
+			# if incorrect: auto: ./.death.sh
+typewriter () {
+YOU
+	ARE
+		DEAD
+Clear
+	Checking for memory card . . .
+	. . . checking . . .
+	. . . checking . . .
+	. . . No memory card inserted
+Clear
+		G O O D
+		L U C K
+		N E X T
+		T I M E
+				:)
+# RESET FILES
+mv 
+# EXIT PLAYER OUT
+exit
+}		
+			# if correct, then:
+
+dir: /oswell_spencer_mansion
+	auto: cd ./mainhall
+
+Dir: /mainhall
+	auto: .enter_mainhall1.sh
+Typewriter () {
+	They have escaped into the mansion, where they thought it
+	was safe.
+	
+												Yet . . .
+
+		Wesker: Wow, what a mansion!
+
+	They stood on a lush red rug that went from the large
+	front doors all the way up the grand staircase. Marble
+	floors caught bright flashes of thunder outside, booming
+	all around them in the large main hall.
+	
+		Jill: Captain Wesker, where's Chris?
+		Wesker: Stop it! Don't open that door!
+		Jill: But Chris is--
+	...might be out there, Jill was saying as a gun went off
+	somewhere in the mansion.
+
+	All of their eyes landed on the double doors to the left.
+
+		Barry: What is it?
+		Wesker: Maybe it's... Chris...
+								Now, Jill--Can you go?
+
+		Barry: I'm going with you. Chris is our old partner, ya know.
+		Wesker: Stay alert!
+
+	Jill was relieved Barry was coming with her.
+	And that he was bringing his Colt .45 with him.
+	Remember the previous commands used.
+}
+	player command
+		ls
+			# ./doubledoors
+			# ./.browndoor | hidden until .searching_mainhall.sh
+			# ./.bluedoor | hidden until .searching_mainhall.sh
+			# ./help_me_barry1.txt
+			# ./help_me_barry2.txt | hidden until .searching_mainhall.sh
+		cat ./help_me_barry1.txt
+			# commands ls and cd will be helpful
+		cd ./doubledoors
+
+dir: /doubledoors
+	auto: .enter_dininghall.sh
+Typewriter () {
+	Together Jill and Barry passed through the double doors
+	and entered a long, extravagant dining room. The storm
+	picked up outside. The air smelled.. of…
+
+		Barry: What? What is this? . . .Blood?
+		. . .Hope this is not Chris's blood...
+
+	Jill stood behind Barry who squatted down examining the
+	puddle of blood in front go him. Before Jill could do
+	anything, a door in the far corner creaked open. . .
+
+		Jill: Who is that?
+
+	A man shambled out from the hallway connected to the
+	Dining Room. He raised his arms, showing bloody hands,
+	and groaned approaching the S.T.A.R.S. members.
+
+		Barry: Hey, you, stop!
+		
+	The man didn’t listen, only limped closer.
+	His eyes completely cloudy, as if he were already dead.
+	Behind him, Jill pointed to the body of someone from
+	S.T.A.R.S. Bravo Team. . . their throat ripped out.
+
+		Barry: He's insane!
+
+	Barry fired his Colt .45.
+	The man . . . er, zombie took one more step forward.
+	Then their head popped like a balloon.
+
+		Barry: What the hell?
+		Jill: Let's report this to Wesker!
+}
+	player command
+		ls
+			# ./helpmebarry.txt
+		cat ./helpmebarry.txt
+			# use command ../ to return to the previous directory
+		cd ../
+
+dir: /mainhall
+	auto: .searching_mainhall.sh
+typewriter () {
+	Thunder roared again outside, heavy rain beat down on the
+	large windows that filled the. . . empty Main Hall.
+		
+		Barry: Wesker! Help me look for him, Jill. And don't
+		leave this hall for the time being.
+}
+		player command
+			ls
+				# ./doubledoors
+				# ./browndoor | revealed
+				# ./bluedoor | revealed
+				# ./help_me_barry1.txt
+				# ./help_me_barry2.txt | revealed
+	auto: .search_mainhall.sh
+Typewriter () {
+Barry: Find anything, Jill?
+
+	Jill: Nothing. What is this all about? I can't
+	figure it out at all.
+
+	Barry: Beats me, too.
+
+	Jill: Now it's Wesker's time to disappear! I don't
+	know what's going on.
+
+	Barry: Well, it can't be helped. Let's search for
+	him together. (Jill nodded.) Maybe check the
+	dining room again. 
+}
+		player command
+			cd ./doubledoors
+
+Dir: /doubledoor
+	player command
+		ls
+			# ./helpmebarry1.txt
+			# ./helpmebarry2.txt | revealed
+		cat ./help_me_barry2.txt
+			# Some files can be hidden in a directory.
+			# use command ls -la
+		ls -la
+			# ./.kennethsullivan.txt
+		cat ./.kennethsullivan.txt
+			# the /mainhall/browndoor may open with LOCKPICK
+		cd ../
+
+dir: /mainhall
+	player command
+		ls
+			# ./doubledoors
+			# ./browndoor
+			# ./bluedoor
+	cd ./browndoor
+		The door is locked, however it could be picked. . .
+		password: LOCKPICK
+
+dir: /browndoor
+	auto: .enter_browndoor.sh
+Typewriter () {
+		Barry: Jill, you really are the master of unlocking, take it with you.
+		Jill: Thanks. Maybe I'll need it.
+		Barry: Let’s take a look around in here…
+}
+	player command
+		ls -la
+			# ./something_in_the_vase.sh
+		cat ./something_in_the_vase.sh
+	auto: barry_explains_bash.sh
+Typewriter () {
+	Barry: Jill I don’t think we can cat that because
+	the file has the extension .sh — to run this
+	let’s use the command bash.
+}
+	player command
+	bash ./something_in_the_vase.sh
+Typewriter () {
+Keeper’s Diary
+May 12th, 1998.
+The space suit has me itching all over — I skipped feeding the dogs today out of spite, and felt better for it. By the 13th, the doctor bandaged my swollen back and said I could lose the suit. Then the company locked the grounds down, a researcher got shot trying to leave. They changed the bluedoor password, as if there was a way out through there. My skin started sloughing off in chunks when I scratched.
+May 19th —9—8
+	fever gone. Killed Scott, tasted fine. heard them whisper that the blue door password was changed to itchytasty.
+Itchy. Tasty. Itchy. Reminds me of Scott. And the others I —— Tasty.
+Itchy. Tasty. Itchy. Tasty. Itchy. Tasty. Itchy. Tasty.
+}
+	player command
+	cd ../
+
+dir: /mainhall
+	player command
+		ls
+			# ./doubledoors
+			# ./browndoor
+			# ./bluedoor
+		cd ./bluedoor
+		password: itchytasty
+
+dir: /bluedoor
+	auto: .enter_bluedoor.sh
+Typewriter () {
+		Barry: It's Forest. Oh my God... It looks like he was
+		killed by another one of those monsters. This one is 
+		wearing a lab coat though. . . Can you look around,
+		Jill? See if anything is hidden?
+		
+		Jill: (pauses) Okay.
+}
+	player command
+		ls
+			# ./researcherswill.txt
+			# ./NEWSPAPER_CLIPPINGS.txt
+			# ./security_protocols.txt
+		cat ./researcherswill.txt
+Typewriter () {
+	RESEARCHER'S WILL
+	
+	It's a letter.
+	The top of the letter is missing.
+	The remaining says...
+	
+	Yes, I'm infected.
+	I did everything I could, but I
+	could only delay the progress by
+	a few days.
+
+	The most frightening thing is,
+	that I forget more about you by
+	the day.
+
+	So I chose a peaceful death,
+	rather than becoming the living
+	dead.
+
+	Within an hour, I will have
+	entered my eternal sleep.
+	I do hope you'll understand my
+	decision...
+
+	Good Bye and Forever Yours,
+
+	Martin Crackhorn
+}
+	player command
+		ls
+			# ./researcherswill.txt
+			# ./NEWSPAPER_CLIPPINGS.txt
+			# ./security_protocols.txt
+		cat ./NEWSPAPER_CLIPPINGS.txt
+Typewriter () {
+	strange, all these newspaper articles are
+	about S.T.A.R.S.
+	. . .
+}
+	player command
+		ls
+			# ./researcherswill.txt
+			# ./NEWSPAPER_CLIPPINGS.txt
+			# ./security_protocols.txt
+		cat ./security_protocols.txt
+Typewriter () {
+
+	SECURITY PROTOCOLS
+
+	Spencer Mansion is on lockdown. Unauthorized persons
+	attempting to leave will be shot on site.
+
+	Everyone with Clearance Level: Executive must exit
+	through the ./.privateelevator located behind bluedoor
+	to the Heliport.
+
+BASEMENT LEVEL ONE
+
+	Research_office | For use by the Special Research Division
+	only. All other access to the Visual Data Room must be
+	cleared with Keith Arving, Room Manager.
+
+	Holding_Cells | controls the use of the prison. At least
+	one Consultant Researcher (E. Smith, S. Ross, A. Wesker)
+	must be present if viral use is authorized.
+
+	Passage_to_Heliport | is prohibited unless accompanied by
+	a Consultant Researcher or the Chief of Security.
+	Unauthorized persons entering the heliport will be
+	shot on site.
+
+	Cultivation_room |Regarding the progress of "Tyrant" after
+	the administration of T- Virus...
+
+	(Illegible hereafter...)
+}
+player command
+		ls -la
+			# ./researcherswill.txt
+			# ./NEWSPAPER_CLIPPINGS.txt
+			# ./security_protocols.txt
+			# ./.privateelevator
+		cd ./.privateelevator
+		# Clearance Level:
+		password: executive
+
+dir: ./.privateelevator
+	auto: cd ./Umbrella
+
+dir: ./Umbrella
+	auto: SCRIPT ??
+typewriter () {
+
+}
+	player command
+		ls
+			# ./Research_Office
+			# ./Cultivation_Room
+			# ./Holding_Cells
+			# ./Emergency_Helipad
+		cd ./Cultivation_Room
+		cd ./Holding_Cells
+		cd ./Emergency_Helipad
+			# LOCKED.
+		cd ./Research_Office
+
+dir: ./Resaerch_office
+	player command
+		ls
+			# empty
+		ls -la
+			./.orders.txt
+		cat .orders.txt
+typewriter () {
+	************
+	CONFIDENTIAL
+	Attn: Chief of Security
+	Date: July 22, 1998 2:13
+
+	X Day is drawing upon us. Execute the following
+	procedures within one week. Prompt actions are
+	demanded.
+
+	1. Lure S.T.A.R.S. to the estate, and obtain raw combat
+		data against B.O.W.s
+
+	2. Dispose of the Tyrant in the Cultivation_Room
+		password: medal_of_eagle
+
+	3. Ensure complete disposal of the Arklay Laboratory
+	including all personnel and test animals. Disguise their
+	deaths as an accident. When the above procedures are
+	executed, report to headquarters for further instructions.
+
+Good luck.
+Umbrella Headquarters,
+Umbrella Inc.
+}
+	player command
+		cd ../
+
+dir: ./Umbrella
+	player command
+		ls
+			# ./Research_Office
+			# ./Cultivation_Room
+			# ./Holding_Cells
+			# ./Emergency_Helipad
+		cd ./Holding_Cells
+		cd ./Emergency_Helipad
+			# LOCKED.
+		cd ./Cultivation_Room
+		#it requires a medal of
+			password: eagle
+
+dir: ./cultivation_room
+	auto: SCRIPT ??
+typewriter () {
+WESKER IS FOUND OUT! BARRY SHOOTS THE TYRANT! THE SELF DESTRUCT SEQUENCE IS ACTIVATED AND ALL LOCKS HAVE BEEN RELEASED! ALL EXECUTIVES MUST EXIT THROUGH THE EMERGENCY_HELIPAD NOW.
+}
+	player command
+		cd ../
+
+dir: ./Umbrella
+	player command
+		ls
+			# ./Research_Office
+			# ./Cultivation_Room
+			# ./Holding_Cells
+			# ./Emergency_Helipad
+
+# TWO PATHS TO THE END NOW / BAD/GOOD ENDING
+		cd ./Emergency_Helipad
+
+dir: ./Emergency_Helipad
+auto: SCRIPT ??
+typewriter () {
+THE HELICOPTER COMES, AS THE TYRANT BREAKS THROUGH THE FLOOR READY TO UNLEASH HELL.
+BRAD THROWS DOWN A ROCKET LAUNCHER. Jill picks it up and aims. . . 
+}
+
+#65% Chance on Good or bad ending
+
+#BAD ENDING
+auto: SCRIPT ??
+typewriter () {
+JILL FIRED THE ROCKET LAUNCHER, WATCHING AS THE TYRANT RAISED IT’S GIANT CLAW
+DEFLECTING THE ROCKET, IT HIT THE TAIL END OF THE HELICOPTER. IT CAME CRASHING DOWN OVER JILL AND BARRY. AS JILL TRIED TO RECOVER, SHE HEARD THE SELF DESTRUCTION SEQUENCE COUNTDOWN. SHE WATCHED AS THE TYRANT LEAPED INTO THE AIR AWAY FROM THE HELICOPTER PAD.
+THE POOR CITIZENS OF RACCOON CITY. . . 
+THEN NOTHING BUT A FIRE THAT TURNED HER VISION TO BLACK. 
+}
+		
+#GOOD ENDING
+auto: SCRIPT ??
+typewriter () {
+Jill fired the rocket launcher, watching as it shot to the other end of the helipad where the tyrant snarled before he exploded into bits and pieces all around them.
+	
+	Barry: Hurry, the self-destruction system is gonna go off any second! 
+}
+
+
+#player has a 50% chance of Bad or Good ending.
+# TWO PATHS TO THE END NOW / GREAT ENDING
+		cd ./Holding_cells
+
+dir: ./holding_cells
+	player command
+		ls
+			#./Cell_1
+			#./Cell_2
+			#./Cell_3
+			#./Cell_4
+			#./Cell_5
+			#./Cell_6
+			#./Cell_7
+			#./Cell_8
+			#./Cell_9
+			#./Cell_10
+		cd ./Cell_1
+		cd ./Cell_3
+		cd ./Cell_8
+	auto: .Zombie_death.sh
+typewriter () {
+The cell was filled with the dead.
+
+A dozen of them. Maybe more. Shoulders pressed against
+shoulders, the ones in back pushing the ones in front.
+The smell hit Jill before the sight did.
+
+She stepped back. Her heel caught the doorframe.
+They were already on her.
+
+Hands in her hair. Teeth at her throat. The weight of
+six, seven, eight bodies driving her to the floor.
+Somewhere underneath it all, Jill stopped moving. 
+auto: ./.death.sh
+}
+		cd ./Cell_2
+		cd ./Cell_4
+		cd ./Cell_10
+	auto: .hunter_death.sh
+typewriter () {
+The cell was filled with something that shouldn't exist.
+
+Green scaled hide. Yellow eyes that tracked Jill before she'd
+finished turning the handle. It was already moving.
+
+The claws came down in a single clean arc. Jill didn't have
+time to raise her arm. She didn't have time to scream.
+
+Her head hit the floor before her body did.
+auto: ./.death.sh
+}
+		cd ./Cell_5
+		cd ./Cell_6
+		cd ./Cell_9
+	auto: .spider_death.sh
+typewriter () {
+The cell was filled with silence.
+
+Jill stepped inside. Empty. Just a chair, a desk, a
+thin layer of dust on everything. Something shifted above her.
+
+She looked up. Eight eyes looked back.
+
+It dropped. Legs the length of her arms wrapped around
+her shoulders, her waist, her throat. The fangs found
+the soft place under her jaw and stayed there.
+
+The last thing Jill saw was her own reflection, small
+and upside down, in one of its eyes.
+auto: ./.death.sh
+}
+		cd ./Cell_7
+auto: ./HelloChris.sh
+typewriter () {
+
+}
