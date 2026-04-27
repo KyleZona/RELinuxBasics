@@ -290,8 +290,8 @@ dir: /mainhall
 dir: /browndoor
 	auto: .enter_browndoor.sh
 Typewriter () {
-		Barry: Jill, you really are the master of unlocking, take it with you.
-		Jill: Thanks. Maybe I'll need it.
+		Barry: Jill, you really are the master of unlocking.
+		Jill: Thanks, Barry.
 		Barry: Let’s take a look around in here…
 }
 	player command
@@ -307,13 +307,27 @@ Typewriter () {
 	player command
 	bash ./something_in_the_vase.sh
 Typewriter () {
-Keeper’s Diary
-May 12th, 1998.
-The space suit has me itching all over — I skipped feeding the dogs today out of spite, and felt better for it. By the 13th, the doctor bandaged my swollen back and said I could lose the suit. Then the company locked the grounds down, a researcher got shot trying to leave. They changed the bluedoor password, as if there was a way out through there. My skin started sloughing off in chunks when I scratched.
-May 19th —9—8
-	fever gone. Killed Scott, tasted fine. heard them whisper that the blue door password was changed to itchytasty.
-Itchy. Tasty. Itchy. Reminds me of Scott. And the others I —— Tasty.
-Itchy. Tasty. Itchy. Tasty. Itchy. Tasty. Itchy. Tasty.
+	Keeper’s Diary
+
+	May 12th, 1998.
+
+	The space suit has me itching all over — I skipped feeding the
+	dogs today out of spite, and felt better for it. By the 13th,
+	the doctor bandaged my swollen back and said I could lose the suit.
+	Then the company locked the grounds down, a researcher got shot
+	trying to leave. They changed the bluedoor password, as if there
+	was a way out through there. My skin started sloughing off in
+	chunks when I scratched.
+
+	May 19th —9—8
+
+	fever gone. Killed Scott, tasted fine.
+	heard them whisper that the blue door password was changed to
+	itchytasty
+	Itchy. Tasty. Itchy. Reminds me of Scott. And the others I ——
+	Tasty.
+	Itchy. Tasty. Itchy. Tasty.
+							Itchy. Tasty. Itchy. Tasty.
 }
 	player command
 	cd ../
@@ -331,11 +345,12 @@ dir: /bluedoor
 	auto: .enter_bluedoor.sh
 Typewriter () {
 		Barry: It's Forest. Oh my God... It looks like he was
-		killed by another one of those monsters. This one is 
-		wearing a lab coat though. . . Can you look around,
-		Jill? See if anything is hidden?
+		killed by another one of those monsters.
 		
-		Jill: (pauses) Okay.
+		Jill: Barry, where did the monster go, though?
+
+	Both S.T.A.R.S. members realized there must be a
+	hidden passageway or something in this directory.
 }
 	player command
 		ls
@@ -397,8 +412,8 @@ Typewriter () {
 	attempting to leave will be shot on site.
 
 	Everyone with Clearance Level: Executive must exit
-	through the ./.privateelevator located behind bluedoor
-	to the Heliport.
+	through the .privateelevator located in bluedoor and
+	head directly to the Emergency_Heliport for evacuation.
 
 BASEMENT LEVEL ONE
 
@@ -463,31 +478,31 @@ typewriter () {
 	Attn: Chief of Security
 	Date: July 22, 1998 2:13
 
-	WESKER,
+	ALBERT,
 
-	X Day is drawing upon us. Execute the following
-	procedures within one week. Prompt actions are
-	demanded.
+		X Day is drawing upon us. Execute the following
+		procedures within one week. Prompt actions are
+		demanded.
 
-	1. Lure S.T.A.R.S. to the estate, and obtain raw combat
-		data against B.O.W.s
+		1. Lure S.T.A.R.S. to the estate, and obtain raw combat
+			data against B.O.W.s
 
-	2. Dispose of the Tyrant in the Cultivation_Room
-		password: eagle
+		2. Dispose of the Tyrant in the Cultivation_Room
+			password: eagle
 
-	3. Ensure complete disposal of the Arklay Laboratory
-	including all personnel and test animals. Disguise their
-	deaths as an accident. When the above procedures are
-	executed, report to headquarters for further instructions.
+		3. Ensure complete disposal of the Arklay Laboratory
+		including all personnel and test animals. Disguise their
+		deaths as an accident. When the above procedures are
+		executed, report to headquarters for further instructions.
 
-Good luck.
-Umbrella Headquarters,
-Umbrella Inc.
+	Good luck.
+	Umbrella Headquarters,
+	Umbrella Inc.
 }
 	auto: .Suspect_Wesker.sh
 typewriter () {
 	Jill: Barry... this couldn't be...
-	Barry: We need to find Wesker immediately.
+	Barry: We need to find Captain Albert Wesker immediately.
 }
 	player command
 		cd ../
@@ -509,78 +524,86 @@ dir: ./cultivation_room
 	auto: SCRIPT ??
 typewriter () {
 
-Jill read the name of the directory, Cultivation_Room, on the
-blast door. Entering the password, the blast door lifted up.
+	Jill read the name of the directory, Cultivation_Room, on the
+	blast door. Entering the password, the blast door lifted up.
 
-Somewhere inside, someone was typing on a keyboard.
-Jill and Barry stepped inside. The blast door locked behind them.
-The air was cold, and a thin fog collected around their boots.
-Jill took a step forward, watching her wonky reflection move in
-all the large foggy glass tubes that filled the room.
-Through them, she saw him.
+	Somewhere inside, someone was typing on a keyboard.
+	Jill and Barry stepped inside. The blast door locked behind them.
+	The air was cold, and a thin fog collected around their boots.
+	Jill took a step forward, watching her wonky reflection move in
+	all the large foggy glass tubes that filled the room.
+	Through them, she saw him.
 
-	Jill: Wesker?
-	Wesker: Well, well...
+		Jill: Wesker?
+		Wesker: Well, well...
 
-Wesker didn't even turn around to look at them. Just kept
-typing on the keyboard.
+	Wesker didn't even turn around to look at them. Just kept
+	typing on the keyboard.
 
-	Barry: Cut the crap, Wesker. We read the orders.txt...
-	Jill: Why do you have to destroy S.T.A.R.S.?
-	Wesker: That's Umbrella's intention. This labratory has been
-		engaging in dangerous experiements, and recently, an
-		accident occured. A virus got out. Anyway, this disaster
-		cannot be made public.
-	Jill: Is that why having S.T.A.R.S. nosing about is so
-		inconvenient? You're a slave to Umbrella, along with
-		these virus monsters.
-	Wesker: I think you misunderstand me, Jill. I'm going to 
-		burn this entire labratory. If you helped create one
-		of the most powerful biological	weapons. . .
-		what would you do?
-	Jill: You must stop this now.
-	Wesker: Hmph. Idiots, no one understands its real value.
-	Jill: So you're going to steal all the research?
-	Wesker: Better yet. I'm going to show you the Tyrant.
+		Barry: Cut the crap, Wesker. We read the orders.txt...
+	
+		Jill: Why do you have to destroy S.T.A.R.S.?
+	
+		Wesker: That's Umbrella's intention. This labratory has been
+			engaging in dangerous experiements, and recently, an
+			accident occured. A virus got out. Anyway, this disaster
+			cannot be made public.
+	
+		Jill: Is that why having S.T.A.R.S. nosing about is so
+			inconvenient? You're a slave to Umbrella, along with
+			these virus monsters.
+	
+		Wesker: I think you misunderstand me, Jill. I'm going to 
+			burn this entire labratory. If you helped create one
+			of the most powerful biological	weapons. . .
+			what would you do?
+	
+		Jill: You must stop this now.
+		
+		Wesker: Hmph. Idiots, no one understands its real value.
+		
+		Jill: So you're going to steal all the research?
+		
+		Wesker: Better yet. I'm going to show you the Tyrant.
 
-Wesker stopped typing on the keyboard. To his left, one of the
-large tubes started to drain. An ungodly creation inside.
-Over 8 feet tall, with a giant mutated claw as their left hand,
-and a gaint beating heart exposed on the chest.
-The tyrant opened it's eyes.
+	Wesker stopped typing on the keyboard. To his left, one of the
+	large tubes started to drain. An ungodly creation inside.
+	Over 8 feet tall, with a giant mutated claw as their left hand,
+	and a gaint beating heart exposed on the chest.
+	The Tyrant opened it's eyes.
 
-	Wesker: The tyrant is the most powerful biological weapon
-		in the entire world. All this power will be mine. . .
+		Wesker: The Tyrant is the most powerful biological weapon
+			in the entire world. All this power will be mine. . .
 
-In one swift motion, the Tyrant broke through the glass with
-it's mutated hand.
+	In one swift motion, the Tyrant broke through the glass with
+	it's mutated hand.
 
-	Wesker: What? Don't come this way!
+		Wesker: What? Don't come this way!
 
-In one second, the Tyrant was out of the test tube and lifting
-Wesker to his feet. The next, the mutated claw pierced through
-his chest.
+	In one second, the Tyrant was out of the test tube and lifting
+	Wesker to his feet. The next, the mutated claw pierced through
+	his chest.
 
-	Barry: Jill...
+		Barry: Jill...
 
-Barry placed a hand on Jill. Slowly encouraging her to step away
-quietly before... The tyrant turned, seeing them. Nowhere to run.
-The tyrant threw Wesker's body across the room into a panel of
-computer devices.
+	Barry placed a hand on Jill. Slowly encouraging her to step away
+	quietly before... The Tyrant turned, seeing them. Nowhere to run.
+	The Tyrant threw Wesker's body across the room into a panel of
+	computer devices.
 
-The tyrant turned, baring it's oversized teeth at them.
+	The Tyrant turned, baring it's oversized teeth at them.
 
-	Jill: Barry, fire!
+		Jill: Barry, fire!
 
-Both S.T.A.R.S. members aimed, and fired everything into the
-tyrant's exposed beating heart. Barry's Colt .45 knocked that
-Tyrant off it's feet.
+	Both S.T.A.R.S. members aimed, and fired everything into the
+	Tyrant's exposed beating heart. Barry's Colt .45 knocked that
+	Tyrant off it's feet.
 
-	Overhead: THIS FACILITY WILL DETONATE IN FIVE MINUTES. ALL DOORS ARE NOW UNLOCKED.
+		Overhead: THIS FACILITY WILL DETONATE IN FIVE MINUTES. ALL DOORS ARE NOW UNLOCKED.
 
-Around them, emergency lights flashed around. A loud siren blared on repeat.
+	Around them, emergency lights flashed around. A loud siren blared on repeat.
 
-	Barry: Jill we have to escape!
+		Barry: Jill we have to escape!
 
 # in this script, let's have an auto script run that warns of the self destruct sequence
 # every time a player enters a new directory.
@@ -610,59 +633,93 @@ dir: ./Emergency_Helipad
 	auto: .self-destruct-sequence.sh
 	auto: .JillandBarryChanceOfEscape.sh
 typewriter () {
-THE HELICOPTER COMES, AS THE TYRANT BREAKS THROUGH THE FLOOR READY TO UNLEASH HELL.
-Use the passwordd: rocket_launcher to take care of that thing!
-Jill picked up the rocket_launcher as quick as she could,
-and with her finger over the trigger she...
+
+	Outside, the Emergency_Helipad was boxed in, hidden among the trees with
+	the sounds of a helicopter in the distance. The sun was starting to rise,
+	and Jill estimated that Brad was running out of fuel...
+
+	In the corner, Jill spotted a red framed box with a bright orange flare
+	gun inside. Grabbing it, she fired into the sky. Hope filled them both
+	as the sound of the helicopter got louder.
+
+	Then an explosion in the opposite corner.
+	The sun, rising over the mountain, cast fresh light on the chunks of
+	rubble that exploded out from the large cloud of concrete dust rising.
+
+	Jill and Barry stared at the large black hole as the Tyrant leapt out
+	and above their heads. Landing on his feet, his eyes locked on to Jill.
+	Barry raised his gun to fire nothing. He looked down at his Colt 45.
+
+		BARRY: Shit! I'm empty! Jill--
+
+	Jill dove away as the Tyrant dashed between them with its claw
+	jutting out. The Tyrant stood between them, looking from one to the other.
+	Deciding which one to annihilate first.
+
+		BRAD: USE THIS! KILL THAT MONSTER!
+
+	Jill looked up to see Brad descending overhead. A large green box
+	fell from the open doors. She recognized the box, which had a bright
+	yellow sticker on all sides that read: TO FIRE ENTER: rocket_launcher.
+
+		BARRY: Hey! Big guy!
+
+	Jill watched as Barry distracted the Tyrant, and she knew that right
+	now was her moment... She hurried to the box, opening it to pull out
+	the big weapon.
+
 }
 
-# Player Prompted to fire the... [rocket_launcher]
+# Player Prompted to fire please enter the password: rocket_launcher
 
 ####### BAD OR GOOD ENDING
-password: rocketlauncher
-	# 65% Chance of "beating" tyrant
+password: rocket_launcher
+	# 65% Chance of "beating" Tyrant
 	# yes = good ending
 	# no = bad ending
+	# wrong password = auto: /death.sh
 
 #######BAD ENDING
 		auto: .bad_ending.sh ??
 typewriter () {
-JILL FIRED THE ROCKET LAUNCHER, WATCHING AS THE TYRANT RAISED IT’S GIANT CLAW
-DEFLECTING THE MISSLE. IT SOARED INTO THE SKY EXPLODING AGAINST THE HELICOPTER TAIL.
-EVERYTHING CAME CRASHING DOWN OVER JILL AND BARRY. AS JILL TRIED TO RECOVER,
-SHE HEARD THE SELF DESTRUCTION SEQUENCE COUNTDOWN. SHE WATCHED AS THE TYRANT LEAPT
-INTO THE AIR AWAY FROM THE HELICOPTER PAD.
-TOWARDS. . . RACCOON CITY. . . 
-. . .
-SELF DESTRUCTION WILL DESTRUCT IN. . .
-3
-2
-1
---
+	JILL FIRED THE ROCKET LAUNCHER, WATCHING AS THE TYRANT RAISED ITS GIANT CLAW QUICKLY
+	DEFLECTING THE MISSILE. IT SOARED INTO THE SKY EXPLODING AGAINST THE HELICOPTER TAIL.
+	EVERYTHING, INCLUDING BRAD, CAME CRASHING DOWN IN A BLAZE OVER JILL AND BARRY. AS JILL TRIED TO RECOVER,
+	SHE HEARD THE SELF DESTRUCTION SEQUENCE COUNTDOWN. SHE WATCHED AS THE TYRANT LEAPT
+	INTO THE AIR AWAY FROM THE Emergency_Helipad.
+	TOWARDS. . . RACCOON_CITY. . . 
+	. . .
+	SELF DESTRUCTION WILL DESTRUCT IN. . .
+	... three ...
+	... two ...
+	... o
+	
 	auto:.death.sh
 }
 		
 #######GOOD ENDING
 	auto: .good_ending.sh
 typewriter () {
-JILL PLANTED HER FEET, AND TOOK AIM. BRACING HERSELF AS THE ROCKET LAUNCHED. THE
-TYRANT STARED AT THE MISSLE CURIOUSLY BEFORE EXPLODING INTO A MILLION LITTLE
-BITS THAT RAINED DOWN AROUND THEM.
+	JILL PLANTED HER FEET, AND TOOK AIM. BRACING HERSELF AS THE ROCKET LAUNCHED. THE
+	TYRANT STARED AT THE MISSILE CURIOUSLY BEFORE EXPLODING INTO A MILLION LITTLE
+	BITS THAT RAINED DOWN OVER JILL AND BARRY.
 
-INSIDE THE HELICOPTER, JILL SAT NEXT TO BARRY WATCHING THE MANSION IN THE DISTANCE.
+	INSIDE THE HELICOPTER, JILL SAT NEXT TO BARRY WATCHING THE MANSION IN THE DISTANCE.
 
-	BARRY: What about. . . Chris?
-	JILL: Don't worry. I know he must still be alive. . .
+		BARRY: What about. . . Chris?
+		JILL: Everything happened so fast... I thought I saw some Holding_Cells, but
+		. . .
 
-IN THE DISTANCE, SIRENS FROM THE SELF DESTRUCT SEQUENCE WAILED HIGHER.
-THEN, THE ENTIRE MANSION EXPLODED. TAKING WITH IT ANY EVIDENCE. . .
-AND ANY HOPE OF FINDING CHRIS REDFIELD.
+	IN THE DISTANCE, SIRENS FROM THE SELF DESTRUCT SEQUENCE WAILED HIGHER.
+	THEN, THE ENTIRE MANSION EXPLODED. TAKING WITH IT ANY EVIDENCE. . .
+	AND ANY HOPE OF EVER FINDING CHRIS REDFIELD.
+
 }
 
 ####### GREAT ENDING
 	password: ultimatelifeform
 	#provided by Chris Redfield
-	# 100% chance of "beating" tyrant
+	# 100% chance of "beating" Tyrant
 
 # TWO PATHS TO THE END NOW / GREAT ENDING
 		cd ./Holding_cells
@@ -692,11 +749,11 @@ dir: ./holding_cells
 		cd ./Cell_8
 	auto: .Zombie_death.sh
 typewriter () {
-The cell was filled with zombies.
+	The cell was filled with zombies.
 
-A dozen of them. Maybe more.
-Hands in her hair.
-Teeth at her throat.
+	A dozen of them. Maybe more.
+	Hands grabbed her hair.
+	Teeth at his throat.
 
 	auto: ./.death.sh
 }
@@ -707,15 +764,15 @@ Teeth at her throat.
 		cd ./Cell_10
 	auto: .hunter_death.sh
 typewriter () {
-The cell was filled with something that shouldn't exist.
+	The cell was filled with something that shouldn't exist.
 
-Green scaled hide. Yellow eyes that tracked Jill before she'd
-finished turning the handle. It lept into the air.
+	Green scaled hide. Yellow eyes that tracked Jill before she'd
+	finished turning the handle. It lept into the air.
 
-The claws came down in a single clean arc. Jill didn't have
-time to react. She didn't have time to scream.
+	The claws came down in a single clean arc. Jill didn't have
+	time to react. She didn't have time to scream.
 
-Her head hit the floor before her body did.
+	Her head hit the floor before her body did.
 
 	auto: ./.death.sh
 }
@@ -726,28 +783,36 @@ Her head hit the floor before her body did.
 		cd ./Cell_9
 	auto: .spider_death.sh
 typewriter () {
-The cell was filled with silence.
+	The cell was filled with silence.
 
-Jill stepped inside. Empty. Just a chair, a desk, a
-thin layer of... webs? Something shifted above her.
+	Jill stepped inside. Empty. Just a chair, a desk, a
+	thin layer of... webs? Something shifted above her.
 
-She looked up. Eight eyes looked back.
+	She looked up. Eight eyes looked back.
 
-Legs the length of her arms wrapped around
-her shoulders, her waist, her throat. The fangs found
-the soft place under her jaw.
+	Legs the length of her arms wrapped around
+	her shoulders, her waist, her throat. The fangs found
+	the soft place under her jaw.
 
-Jill's body went limp, Barry raised his gun to aim
-but the spider shot him with... acid? Jill couldn't
-move, only watched in horror, as Barry melted where
-he stood. Then she watched, as the spider got to work.
+	Jill's body went limp, Barry raised his gun to aim
+	but the spider shot him with... acid? Jill couldn't
+	move, couldn't process, only watch in horror as Barry
+	melted where he stood.
+	Knowing she was next.
 
 	auto: ./.death.sh
 }
 
 #######player command
+		ls
+			./HelpBarry.txt
+			./Cell_# [ALL]
+		cat ./helpbarry.txt
+		# Barry will suggest to call out to Chris using
+		# command grep -r "Chris"
+		# return: ./Cell_7/.ChrisRedfield.sh
 		cd ./Cell_7
-	auto: ./HelloChris.sh
+	auto: ./ChrisRedfield.sh
 typewriter () {
 	Chris: Oh Jill! Barry!
 	Jill: Oh Chris! So you're okay!
@@ -760,6 +825,7 @@ typewriter () {
 # THIS WILL THEN
 rm .JillandBarryChanceofEscape.sh ./Emergency_Helipad
 mv .ThreeSurvivors.sh ./Emergency_Helipad
+or maybe it doesn't rm -- it updates the auto to pull the correct ending.
 }
 
 #######player command
@@ -777,12 +843,86 @@ dir: ./Umbrella
 
 dir: ./Emergency_Helipad
 	auto: .self-destruct-sequence.sh
-	auto: .JillandBarryChanceOfEscape.sh
+	auto: .ThreeSurvivors.sh
 typewriter () {
-THE HELICOPTER COMES, AS THE TYRANT BREAKS THROUGH THE FLOOR READY TO UNLEASH HELL.
-Use the passwordd: rocket_launcher to take care of that thing!
-Jill picked up the rocket_launcher as quick as she could,
-and with her finger over the trigger she...
+	Outside, the Emergency_Helipad was boxed in, hidden among the trees with
+	the sounds of a helicopter in the distance. The sun was starting to rise,
+	and Jill estimated that Brad was running out of fuel...
+
+	In the corner, Jill spotted a red framed box with a bright orange flare
+	gun inside. Grabbing it, she fired into the sky. Hope filled them both
+	as the sound of the helicopter got louder.
+
+	Then an explosion in the opposite corner.
+	The sun, rising over the mountain, cast fresh light on the chunks of
+	rubble that exploded out from the large cloud of concrete dust rising.
+
+	Jill, Barry, and Chris stared at the large black hole as the Tyrant leapt out
+	and above their heads. Landing on his feet, his eyes locked on to Jill.
+	Barry raised his gun to fire nothing. He looked down at his Colt 45.
+
+		BARRY: Shit! I'm empty! Jill--
+
+	Jill dove away as the Tyrant dashed between them with its claw
+	jutting out. The Tyrant stood between them, looking from Chris, to Barry,
+	and then to Jill.
+	Deciding which one to annihilate first.
+
+		BRAD: USE THIS! KILL THAT MONSTER!
+
+	Jill looked up to see Brad descending overhead. A large green box
+	fell from the open doors. She recognized the box, which had a bright
+	yellow sticker on all sides that read: TO FIRE ENTER: rocket_launcher.
+
+		BARRY: Hey! Big guy!
+		CHRIS: Over here!
+
+	Jill watched as Barry and Chris distracted the Tyrant, and she knew that
+	right now was her moment... She hurried to the box, opening it to pull out
+	the big weapon.
 }
 
-# Player Prompted to fire the... [rocket_launcher]
+# Player Prompted to fire please enter the password: rocket_launcher
+
+####### GREAT ENDING
+password: rocket_launcher
+	# 100% Chance of "beating" Tyrant
+	# wrong password = auto: /death.sh
+
+#######GREAT ENDING
+		auto: .great_ending.sh ??
+typewriter () {
+	JILL PLANTED HER FEET, AND TOOK AIM. BRACING HERSELF AS THE ROCKET LAUNCHED. THE
+	TYRANT STARED AT THE MISSILE CURIOUSLY BEFORE EXPLODING INTO A MILLION LITTLE
+	BITS THAT RAINED DOWN OVER JILL, BARRY, AND CHRIS.
+
+	INSIDE THE HELICOPTER, JILL RESTED HER HEAD ON CHRIS'S SHOULDER.
+	BARRY LOADED HIS COLT .45 JUST IN CASE...
+	
+	IN THE DISTANCE, SIRENS FROM THE SELF DESTRUCT SEQUENCE CUT OFF.
+	THEN, THE ENTIRE MANSION EXPLODED. TAKING WITH IT ANY EVIDENCE OF
+	TRYING TO WARN RACCOON_CITY OR THE WORLD ABOUT WHAT THEY HAD SEEN.
+
+	auto: credits_and_thank_you.sh
+typewriter () {
+	Thank you for playing. I hope you've learned some basic linux commands
+	that can help you grow as you continue learning about this incredible
+	operating system.
+
+	If you've been following the blog posts, every aspect has been
+	detailed providing thanks to the various sources in the community that
+	I relied on to make this.
+
+	As well, if you enjoyed this, please try the next challenge covering
+	Advanced Linux Commands with Chris Redfield. Same premise, different twists,
+	no hints to help you survive the mansion this time either...
+	
+			G O O D  L U C K !
+
+
+# reset game files
+
+# exit and reset game
+exit
+}
+
